@@ -14,5 +14,6 @@ You should initialize field `FIXER_ACCESS_KEY` in `src/defines.js` with your `ac
     npx http-server ./
 
 ## Errors
-#### If you didn't provide `access_key` to `Fixer.io` you won't be able to use the app.
-#### If your `access_key` to `Fixer.io` is attached to a free plan, you won't be able to select base currency. 
+If you didn't provide `access_key` to `Fixer.io` you won't be able to use the app.
+
+If your `access_key` to `Fixer.io` is attached to a free plan, you won't be able to select base currency. 
