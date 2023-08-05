@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="loadApp()">
+    <div id="loader"></div>
+    <div id="error" style="display: none">
+        <div id="error-text"></div>
+        <span id="reload-btn" onclick="onReloadBtnClick()">&#8635;</span>
+    </div>
+    <div id="main" style="display: none">
+        <div id="base-title"></div>
+        <div id="rate"></div>
+        <div id="date"></div>
+        <div id="currencies">
+            <div>
+                <input id="base-input" type="number" min="0" value="1" oninput="onBaseInput()">
+                <select id="base-select" onchange="onBaseSelectChange()"></select>
+            </div>
+            <div>
+                <input id="target-input" type="number" min="0" value="1" oninput="onTargetInput()">
+                <select id="target-select" onchange="onTargetSelectChange()"></select>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>

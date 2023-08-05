@@ -1,0 +1,121 @@
+body {
+    font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+}
+
+#main {
+    width: 50%;
+    max-width: 410px;
+    margin: 50px auto;
+}
+
+#loader {
+    width: 120px;
+    height: 120px;
+    margin: 120px auto;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0deg);   }
+    100% { transform: rotate(360deg); }
+}
+
+#error {
+    width: 50%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    color: white;
+    background-color: #f44336;
+    justify-content: space-between;
+}
+
+#reload-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    line-height: 20px;
+    transition: 0.3s;
+}
+
+#reload-btn:hover {
+    color: black;
+}
+
+#base-title {
+    font-size: 16px;
+    font-weight: normal;
+    color: #9aa0a6;
+    line-height: 1.58;
+}
+
+#rate {
+    font-size: 36px;
+    font-weight: normal;
+    color: #202124;
+    line-height: 1.58;
+}
+
+#date {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: #70757a;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.58;
+}
+
+#currencies {
+    width: 100%;
+}
+
+#currencies div {
+    width: 100%;
+    display: flex;
+    margin-bottom: 14px;
+    padding: 1px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:out-of-range {
+    border: 1px dashed red !important;
+}
+
+#currencies input {
+    width: 100px;
+    height: 40px;
+    outline: 0;
+    padding: 1px 6px 1px 12px;
+    border: 0;
+    border-radius: 6px;
+    color: #4d5156;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#currencies select {
+    width: 100%;
+    max-width: 300px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 1px solid #9aa0a6;
+    font-size: 16px;
+    outline: 0;
+    text-align: end;
+}
